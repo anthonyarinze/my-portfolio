@@ -6,11 +6,13 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import LineGradient from "./components/LineGradient";
 import Skills from "./scenes/Skills";
+import Projects from "./scenes/Projects.jsx";
+import Testimonials from "./scenes/Testimonials.jsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,10 +38,18 @@ function App() {
           />
         )}
         <Landing setSelectedPage={selectedPage} />
-        <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full">
-          <Skills setSelectedPage={selectedPage} />
-        </div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Skills />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Testimonials />
       </div>
     </div>
   );

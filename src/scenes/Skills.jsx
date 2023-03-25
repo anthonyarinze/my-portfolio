@@ -4,8 +4,8 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import SkillsImage from "../assets/skills-image.png";
 
-const Skills = ({ setSelectedPage }) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+const Skills = () => {
+  const isAboveLargeScreens = useMediaQuery("(min-width:1060px)");
 
   return (
     <section id="skills" className="pt-10 pb-24">
@@ -27,19 +27,23 @@ const Skills = ({ setSelectedPage }) => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Akfjmemd fsemfjkfn sjfsjfsjnf skjmnjnfjk svkjmkjnv ssjjsvk v
-            vjenvsjknv vrjmj.
+            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
+            fames odio in at.
           </p>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
-          {isAboveMediumScreens ? (
+          {isAboveLargeScreens ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10
                 before:-left-10 before:w-full before:h-full before:border-2
                  before:border-blue before:z-[-1]"
             >
-              <img alt="skills" src={SkillsImage} className="z-10" />
+              <img
+                alt="skills"
+                src={SkillsImage}
+                className="z-10 hover:saturate-100"
+              />
             </div>
           ) : (
             <img alt="skills" src={SkillsImage} className="z-10" />
@@ -68,12 +72,12 @@ const Skills = ({ setSelectedPage }) => {
                 Experience
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 bg-blue h-32 absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            {" "}
-            Akfjmemd fsemfjkfn sjfsjfsjnf skjmnjnfjk svkjmkjnv ssjjsvk v
-            vjenvsjknv vrjmj.
+            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
+            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
+            odio sit sagittis,
           </p>
         </motion.div>
 
@@ -96,12 +100,13 @@ const Skills = ({ setSelectedPage }) => {
                 Innovative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 bg-red h-32 absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            {" "}
-            Akfjmemd fsemfjkfn sjfsjfsjnf skjmnjnfjk svkjmkjnv ssjjsvk v
-            vjenvsjknv vrjmj.
+            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
+            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
+            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
+            faucibus a
           </p>
         </motion.div>
 
@@ -124,12 +129,13 @@ const Skills = ({ setSelectedPage }) => {
                 Imaginative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 bg-yellow h-32 absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            {" "}
-            Akfjmemd fsemfjkfn sjfsjfsjnf skjmnjnfjk svkjmkjnv ssjjsvk v
-            vjenvsjknv vrjmj.
+            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
+            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
+            Sagittis, amet netus fringilla netus lobortis odio sed platea.
+            Bibendum.
           </p>
         </motion.div>
       </div>
