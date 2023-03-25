@@ -8,6 +8,8 @@ import LineGradient from "./components/LineGradient";
 import Skills from "./scenes/Skills";
 import Projects from "./scenes/Projects.jsx";
 import Testimonials from "./scenes/Testimonials.jsx";
+import Contact from "./scenes/Contact.jsx";
+import Footer from "./scenes/Footer.jsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -51,6 +53,10 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
         <Testimonials />
       </div>
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 }
