@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";

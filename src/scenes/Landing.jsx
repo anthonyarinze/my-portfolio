@@ -54,7 +54,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Anthony {""}
+            Anthony
             <span
               className="xs:relative xs:text-deep-blue
                xs:font-semibold z-20 xs:before:content-brush before:absolute
@@ -64,10 +64,11 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringinjnakd madmed. dkmdlaild
-            msefmekmf. Adipiscing arcu, in aliquam fringinjnakd madmed.
-            dkmdlaild msefmekmf.
+          <p className="mt-10 mb-7 text-lg text-center md:text-start">
+            Hi, I'm Anthony, a software engineer specializing in the React and
+            Flutter frameworks; which means I build cool apps and websites like
+            the one you're looking at right now. Feel free to click on either of
+            the buttons below to contact me.
           </p>
         </motion.div>
 
@@ -107,7 +108,7 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
         </motion.div>
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center md:justify-between"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

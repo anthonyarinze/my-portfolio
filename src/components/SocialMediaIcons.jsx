@@ -1,15 +1,15 @@
 import React from "react";
 import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
-import Instagram from "../assets/instagram.png";
-import Facebook from "../assets/facebook.png";
+import GitHub from "../assets/GitHub.png";
+import Hashnode from "../assets/hashnode.png";
 
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/anthony-arinze-a5544321b/"
         target="_blank"
         rel="nonreferrer"
       >
@@ -17,7 +17,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="https://twitter.com/_SaintAnthony_"
         target="_blank"
         rel="nonreferrer"
       >
@@ -25,19 +25,19 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com"
+        href="https://github.com/anthonyarinze"
         target="_blank"
         rel="nonreferrer"
       >
-        <img alt="instagram-link" src={Instagram} />
+        <img alt="github-link" src={GitHub} className="rounded" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com"
+        href="https://saintanthony.hashnode.dev"
         target="_blank"
         rel="nonreferrer"
       >
-        <img alt="facebook-link" src={Facebook} />
+        <img alt="hashnode-link" src={Hashnode} className="rounded" />
       </a>
     </div>
   );
